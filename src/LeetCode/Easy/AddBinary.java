@@ -2,7 +2,7 @@ package LeetCode.Easy;
 
 public class AddBinary {
 
-        public String addBinary(String a, String b) {
+        public static String addBinary(String a, String b) {
             StringBuilder res=new StringBuilder();
             int n=a.length()-1;
             int m=b.length()-1;
@@ -18,7 +18,7 @@ public class AddBinary {
             if(carry!=0) res.append(carry);
             return res.reverse().toString();
         }
-        public void main(String[] args){
+        public static void main(String[] args){
             String a="00000";
             String b="00011";
             System.out.println(addBinary(a,b));
