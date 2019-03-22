@@ -1,3 +1,5 @@
+package RandomQuestions;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -5,7 +7,7 @@ import java.util.Scanner;
 
 public class AnagramCompare {
 
-    public static List<Integer> anagramCompare(List<String> a, List<String> b){
+    public List<Integer> anagramCompare(List<String> a, List<String> b){
         List<Integer> res=new ArrayList();
         int n=a.size(); int m=b.size();
 
@@ -32,7 +34,7 @@ public class AnagramCompare {
 
     }
 
-    public static void main(String[] args){
+    public void main(String[] args){
         Scanner sc=new Scanner(System.in);
         int n=Integer.parseInt(sc.nextLine().trim());
         List<String> a=new ArrayList();

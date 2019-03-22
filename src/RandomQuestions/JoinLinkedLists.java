@@ -9,14 +9,14 @@ public class JoinLinkedLists {
 
 
 
-    public LinkedList<Integer> joinLinkedList(LinkedList a, LinkedList b, int n, int m){
-        int i=n;
-        while(i++<m) a.remove(n);
-        a.add(n,b);
+    public static LinkedList<Integer> joinLinkedList(LinkedList a, LinkedList b, int n, int m){
+        int i=n-1;
+        while(i++<=m-1) a.remove(n-1);
+        a.add(n-1,b);
         return a;
     }
 
-    public void main(String[] args){
+    public static void main(String[] args){
         List<Integer> in= Arrays.asList(1,2,3,4,5,6,7,8,9);
         LinkedList<Integer> a=new LinkedList(in);
         LinkedList<Integer> b=new LinkedList(in);
