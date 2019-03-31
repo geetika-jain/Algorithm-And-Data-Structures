@@ -1,9 +1,10 @@
+package RandomQuestions;
 public class StringsPermutation {
-    void permutation(String str) {
+    static void  permutation(String str) {
         permutation(str, "");
     }
 
-    void permutation(String str, String prefix) {
+    static void permutation(String str, String prefix) {
         if ( str.length() == 0) {
 
             System . out.println(prefix);
@@ -20,7 +21,7 @@ public class StringsPermutation {
 
         }
     }
-    public void main(String[] args){
+    public static void main(String[] args){
         permutation("abc");
     }
 }
