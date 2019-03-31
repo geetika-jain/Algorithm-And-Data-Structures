@@ -1,8 +1,50 @@
 package DataStructures;
 
 public class BinaryTree {
+
+
     // variable to hold index in pre[] array
     static int preindex;
+
+    static node constructTreeUtil(int [] pre, int[] post, int l,int h, int size ){
+        if(preindex>=size || l>h){
+            return null;
+        }
+        node n=new node(pre[preindex++]);
+        int i;
+        if(preindex>=size || l==h){
+            return n;
+        }
+
+
+        for(i=l;i<=h;i++){
+            if(post[i]==pre[preindex]) break;
+        }
+        if(i<=h){
+            n.left=constructTreeUtil(pre,post,l,i, size);
+            n.right=constructTreeUtil(pre,post,i+1,h,size);
+        }
+
+        return n;
+
+    }
+
+    static node constructTree(int[] pre, int[] post, int size)
+    {
+        preindex = 0;
+        return constructTreeUtil(pre, post, 0, size - 1, size);
+    }
+
+    static class node
+    {
+        int data;
+        node left, right;
+
+        public node(int data)
+        {
+            this.data = data;
+        }
+    }
 
     static void printInorder(node root)
     {
@@ -26,15 +68,6 @@ public class BinaryTree {
         printInorder(root);
     }
 
-    static class node
-    {
-        int data;
-        node left, right;
 
-        public node(int data)
-        {
-            this.data = data;
-        }
-    }
 
 }
