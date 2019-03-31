@@ -1,0 +1,474 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(date 1554064403000)
++++ .idea/workspace.xml	(date 1554064584000)
+@@ -1,10 +1,15 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="6244aaa9-cb19-46c6-9705-e3a11fcfc228" name="Default Changelist" comment="">
++    <list default="true" id="6244aaa9-cb19-46c6-9705-e3a11fcfc228" name="Default Changelist" comment="str permutation">
++      <change afterPath="$PROJECT_DIR$/src/DataStructures/BinaryTree.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/RandomQuestions/ChangeDateFormat.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/RandomQuestions/StringPermutation.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/AnagramCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomQuestions/AnagramCompare.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/RandomQuestions/JoinLinkedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomQuestions/JoinLinkedLists.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/Algorithms and Data Structures/BackTracking.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/Algorithms and Data Structures/LeetCode/Easy/AddBinary.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/Algorithms and Data Structures/LeetCode/Easy/CountAndSay.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/Algorithms and Data Structures/LeetCode/Easy/RemoveElement.class" beforeDir="false" />
+     </list>
+     <ignored path="$PROJECT_DIR$/out/" />
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+@@ -12,26 +17,52 @@
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="DefaultGradleProjectSettings">
++    <option name="testRunner" value="GRADLE" />
++    <option name="delegatedBuild" value="true" />
+   </component>
+   <component name="FileEditorManager">
+     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/RandomQuestions/StringPermutation.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="144">
++              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
++              <folding>
++                <element signature="e#92#93#0" expanded="true" />
++                <element signature="e#132#133#0" expanded="true" />
++                <element signature="e#537#538#0" expanded="true" />
++                <element signature="e#554#555#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
+       <file pinned="false" current-in-tab="true">
+-        <entry file="file://$PROJECT_DIR$/src/RandomQuestions/JoinLinkedLists.java">
++        <entry file="file://$PROJECT_DIR$/src/RandomQuestions/StringsPermutation.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="252">
+-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
++            <state relative-caret-position="108">
++              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+               <folding>
+-                <element signature="imports" expanded="true" />
++                <element signature="e#92#93#0" expanded="true" />
++                <element signature="e#133#134#0" expanded="true" />
++                <element signature="e#537#538#0" expanded="true" />
++                <element signature="e#571#572#0" expanded="true" />
+               </folding>
+             </state>
+           </provider>
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/src/RandomQuestions/AnagramCompare.java">
++        <entry file="file://$PROJECT_DIR$/src/DataStructures/BinaryTree.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="244">
+-              <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
++            <state relative-caret-position="486">
++              <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
++              <folding>
++                <element signature="e#234#235#0" expanded="true" />
++                <element signature="e#274#275#0" expanded="true" />
++              </folding>
+             </state>
+           </provider>
+         </entry>
+@@ -59,6 +90,10 @@
+         <option value="$PROJECT_DIR$/src/AnagramCompare.java" />
+         <option value="$PROJECT_DIR$/src/RandomQuestions/AnagramCompare.java" />
+         <option value="$PROJECT_DIR$/src/RandomQuestions/JoinLinkedLists.java" />
++        <option value="$PROJECT_DIR$/src/RandomQuestions/ChangeDateFormat.java" />
++        <option value="$PROJECT_DIR$/src/RandomQuestions/StringPermutation.java" />
++        <option value="$PROJECT_DIR$/src/DataStructures/BinaryTree.java" />
++        <option value="$PROJECT_DIR$/src/RandomQuestions/StringsPermutation.java" />
+       </list>
+     </option>
+   </component>
+@@ -75,7 +110,6 @@
+     </navigator>
+     <panes>
+       <pane id="Scope" />
+-      <pane id="PackagesPane" />
+       <pane id="ProjectPane">
+         <subPane>
+           <expand>
+@@ -92,6 +126,12 @@
+               <item name="Algorithms and Data Structures" type="b2602c69:ProjectViewProjectNode" />
+               <item name="Algorithms and Data Structures" type="462c0819:PsiDirectoryNode" />
+               <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="Algorithms and Data Structures" type="b2602c69:ProjectViewProjectNode" />
++              <item name="Algorithms and Data Structures" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
+               <item name="Easy" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+@@ -104,11 +144,13 @@
+           <select />
+         </subPane>
+       </pane>
++      <pane id="PackagesPane" />
+     </panes>
+   </component>
+   <component name="PropertiesComponent">
+-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553226023177" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
++    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
++    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553229695491" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NLP/Project" />
+     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+   </component>
+@@ -137,7 +179,7 @@
+       </list>
+     </option>
+   </component>
+-  <component name="RunManager" selected="Application.JoinLinkedLists">
++  <component name="RunManager" selected="Application.ChangeDateFormat">
+     <configuration name="AddBinary" type="Application" factoryName="Application" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="LeetCode.Easy.AddBinary" />
+       <module name="Algorithms and Data Structures" />
+@@ -167,6 +209,19 @@
+     <configuration name="AnagramCompare" type="Application" factoryName="Application" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="AnagramCompare" />
+       <module name="Algorithms and Data Structures" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="ChangeDateFormat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="RandomQuestions.ChangeDateFormat" />
++      <module name="Algorithms and Data Structures" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="RandomQuestions.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+@@ -198,14 +253,16 @@
+       </method>
+     </configuration>
+     <list>
++      <item itemvalue="Application.AddBinary" />
++      <item itemvalue="Application.AnagramCompare (1)" />
+       <item itemvalue="Application.AnagramCompare" />
+-      <item itemvalue="Application.AnagramCompare (1)" />
+-      <item itemvalue="Application.AddBinary" />
++      <item itemvalue="Application.ChangeDateFormat" />
+       <item itemvalue="Application.CountAndSay" />
+       <item itemvalue="Application.JoinLinkedLists" />
+     </list>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Application.ChangeDateFormat" />
+         <item itemvalue="Application.JoinLinkedLists" />
+         <item itemvalue="Application.CountAndSay" />
+       </list>
+@@ -243,26 +300,47 @@
+       <option name="project" value="LOCAL" />
+       <updated>1553225259642</updated>
+     </task>
+-    <option name="localTasksCounter" value="4" />
++    <task id="LOCAL-00004" summary="Joins two LinkedLists at given indexes of the first LinkedList">
++      <created>1553226037578</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1553226037578</updated>
++    </task>
++    <task id="LOCAL-00005" summary="str permutation">
++      <created>1553995546743</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1553995546743</updated>
++    </task>
++    <task id="LOCAL-00006" summary="str permutation">
++      <created>1554064403462</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1554064403462</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="ToolWindowManager">
+-    <frame x="67" y="32" width="1853" height="1048" extended-state="6" />
++    <frame x="79" y="32" width="1841" height="1048" extended-state="6" />
+     <layout>
+       <window_info id="Image Layers" order="0" />
+       <window_info id="Designer" order="1" />
+       <window_info id="UI Designer" order="2" />
+       <window_info id="Capture Tool" order="3" />
+       <window_info id="Favorites" order="4" side_tool="true" />
+-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2064552" />
++      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.21568628" />
+       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+-      <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.49972177" weight="0.32925472" />
++      <window_info active="true" anchor="bottom" id="Version Control" order="0" sideWeight="0.49915966" visible="true" weight="0.5817575" />
+       <window_info anchor="bottom" id="Terminal" order="1" />
+-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50027823" side_tool="true" visible="true" weight="0.16573972" />
+-      <window_info anchor="bottom" id="Messages" order="3" weight="0.32925472" />
++      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50084037" side_tool="true" visible="true" weight="0.5817575" />
++      <window_info anchor="bottom" id="Messages" order="3" sideWeight="0.49803922" weight="0.32925472" />
+       <window_info anchor="bottom" id="Message" order="4" />
+       <window_info anchor="bottom" id="Find" order="5" />
+-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49972177" visible="true" weight="0.16573972" />
++      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49916527" weight="0.16573972" />
+       <window_info anchor="bottom" id="Debug" order="7" weight="0.39933258" />
+       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+@@ -363,7 +441,8 @@
+     <MESSAGE value="All my practice code for Algo and DS" />
+     <MESSAGE value="The code for anagrams checks the number of changes required for two words to become anagrams" />
+     <MESSAGE value="Joins two LinkedLists at given indexes of the first LinkedList" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Joins two LinkedLists at given indexes of the first LinkedList" />
++    <MESSAGE value="str permutation" />
++    <option name="LAST_COMMIT_MESSAGE" value="str permutation" />
+     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+   </component>
+@@ -444,10 +523,11 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/AnagramCompare.java">
++    <entry file="file://$PROJECT_DIR$/src/AnagramCompare.java" />
++    <entry file="file://$PROJECT_DIR$/src/RandomQuestions/JoinLinkedLists.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="311">
+-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
++        <state relative-caret-position="252">
++          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+           <folding>
+             <element signature="imports" expanded="true" />
+           </folding>
+@@ -456,17 +536,54 @@
+     </entry>
+     <entry file="file://$PROJECT_DIR$/src/RandomQuestions/AnagramCompare.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="244">
++        <state relative-caret-position="460">
+           <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/RandomQuestions/JoinLinkedLists.java">
++    <entry file="file://$PROJECT_DIR$/src/RandomQuestions/ChangeDateFormat.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="252">
+-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
++        <state relative-caret-position="196">
++          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+           <folding>
+             <element signature="imports" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/RandomQuestions/StringPermutation.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="144">
++          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
++          <folding>
++            <element signature="e#92#93#0" expanded="true" />
++            <element signature="e#132#133#0" expanded="true" />
++            <element signature="e#537#538#0" expanded="true" />
++            <element signature="e#554#555#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/DataStructures/BinaryTree.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="486">
++          <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
++          <folding>
++            <element signature="e#234#235#0" expanded="true" />
++            <element signature="e#274#275#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/RandomQuestions/StringsPermutation.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="108">
++          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
++          <folding>
++            <element signature="e#92#93#0" expanded="true" />
++            <element signature="e#133#134#0" expanded="true" />
++            <element signature="e#537#538#0" expanded="true" />
++            <element signature="e#571#572#0" expanded="true" />
+           </folding>
+         </state>
+       </provider>
+Index: src/RandomQuestions/StringPermutation.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/RandomQuestions/StringPermutation.java	(date 1553995343000)
++++ src/RandomQuestions/StringPermutation.java	(date 1553995343000)
+@@ -0,0 +1,28 @@
++package RandomQuestions;
++
++public class StringPermutation {
++    void permutation(String str) {
++        permutation(str, "");
++         }
++
++    void permutation(String str, String prefix) {
++        if ( str.length() == 0) {
++
++            System . out.println(prefix);
++
++        } else {
++
++            for (int i = 0; i < str.length(); i++) {
++
++                String rem = str.substring(0, i) + str.substring ( i + 1);
++
++                permutation(rem, prefix + str.charAt(i));
++
++            }
++
++        }
++    }
++    public void main(String[] args){
++        permutation("abc");
++    }
++}
+Index: src/RandomQuestions/ChangeDateFormat.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/RandomQuestions/ChangeDateFormat.java	(date 1553229661000)
++++ src/RandomQuestions/ChangeDateFormat.java	(date 1553229661000)
+@@ -0,0 +1,33 @@
++package RandomQuestions;
++
++import java.text.ParseException;
++import java.text.SimpleDateFormat;
++import java.util.Date;
++import java.util.Locale;
++import java.util.Scanner;
++
++public class ChangeDateFormat {
++
++    public static void changeDateFormat(String s){
++        try{
++            SimpleDateFormat f=new SimpleDateFormat("yyyy-MM-DD", Locale.ENGLISH);
++            //SimpleDateFormat in=new SimpleDateFormat("d[th|st|nd|rd]\\sMMM\\syyyy", Locale.ENGLISH);
++
++            Date d=new Date();
++
++            String res=f.format(d);
++            System.out.println(res);
++        }
++        catch(ParseException e){
++
++        }
++
++    }
++
++    public static void main(String[] args){
++        Scanner sc=new Scanner(System.in);
++        String s=sc.nextLine();
++        changeDateFormat(s);
++        sc.close();
++    }
++}
+Index: src/DataStructures/BinaryTree.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/DataStructures/BinaryTree.java	(date 1554064674000)
++++ src/DataStructures/BinaryTree.java	(date 1554064674000)
+@@ -0,0 +1,40 @@
++package DataStructures;
++
++public class BinaryTree {
++    // variable to hold index in pre[] array
++    static int preindex;
++
++    static void printInorder(node root)
++    {
++        if (root == null)
++            return;
++        printInorder(root.left);
++        System.out.print(root.data + " ");
++        printInorder(root.right);
++    }
++
++    public static void main(String[] args)
++    {
++
++        int[] pre = {1, 2, 4, 8, 9, 5, 3, 6, 7};
++        int[] post = {8, 9, 4, 5, 2, 6, 7, 3, 1};
++
++        int size = pre.length;
++        node root = constructTree(pre, post, size);
++
++        System.out.println("Inorder traversal of the constructed tree:");
++        printInorder(root);
++    }
++
++    static class node
++    {
++        int data;
++        node left, right;
++
++        public node(int data)
++        {
++            this.data = data;
++        }
++    }
++
++}
+diff --git out/production/Algorithms and Data Structures/LeetCode/Easy/AddBinary.class out/production/Algorithms and Data Structures/LeetCode/Easy/AddBinary.class
+deleted file mode 100644
+index e43ce742a468f540e68dad025bbd52607edde544..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git out/production/Algorithms and Data Structures/LeetCode/Easy/CountAndSay.class out/production/Algorithms and Data Structures/LeetCode/Easy/CountAndSay.class
+deleted file mode 100644
+index 32af16776c2e5b177559cdde25ad0c971e8618dc..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git out/production/Algorithms and Data Structures/LeetCode/Easy/RemoveElement.class out/production/Algorithms and Data Structures/LeetCode/Easy/RemoveElement.class
+deleted file mode 100644
+index 8e357d916383af8a85cbbe3bd64fd4c88731c525..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git out/production/Algorithms and Data Structures/BackTracking.class out/production/Algorithms and Data Structures/BackTracking.class
+deleted file mode 100644
+index ede1dd008715a9220c619df5add66a88583f5ce0..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
