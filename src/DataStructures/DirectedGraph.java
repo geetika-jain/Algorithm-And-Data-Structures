@@ -16,19 +16,6 @@ public class DirectedGraph {
         }
     }
 
-    public static void main(String[] args){
-        DirectedGraph G=new DirectedGraph(5);
-        G.addEdge(1,2);
-        //G.addEdge(2,3);
-        G.addEdge(2,4);
-        G.addEdge(4,0);
-        //  G.addEdge(0,1);
-        G.addEdge(1,3);
-       G.DFS(1);
-       G.BFS(0);
-
-
-    }
 
     void addEdge(int v, int w){
         adj[v].add(w);
@@ -75,22 +62,34 @@ public class DirectedGraph {
         System.out.println();
     }
 
-//    public int NoOfComponents(){
-//        int count=0;
-//
-//        boolean visited[]=new boolean[V];
-//        for(int i=0;i<V;i++)
-//            visited[i]=false;
-//
-//        for(int i=0;i<V;i++){
-//            if(!visited[i]){
-//                count++;
-//                printDFS(i, visited);
-//            }
-//        }
-//
-//        return count;
-//    }
+    public static void main(String[] args){
+        DirectedGraph G=new DirectedGraph(5);
+        G.addEdge(1,2);
+        G.addEdge(2,3);
+        G.addEdge(2,4);
+        G.addEdge(4,0);
+        G.addEdge(0,1);
+        G.addEdge(0,3);
+        G.DFS(1);
+        G.BFS(0);
+        System.out.println(G.isCyclic());
+
+    }
+
+    boolean isCyclicUtils(int i, boolean[] rec, boolean[] visited){
+        if(rec[i]) return true;
+        if(visited[i]) return false;
+
+        visited[i]=true;
+        rec[i]=true;
+
+        Iterator<Integer> it= adj[i].iterator();
+        while(it.hasNext()){
+            if(isCyclicUtils(it.next(), rec, visited)) return true;
+        }
+        rec[i]=false;
+        return false;
+    }
 
     void BFS(int v, Queue<Integer> Q, boolean[] visited){
 
@@ -112,4 +111,16 @@ public class DirectedGraph {
             }
         }
     }
+
+    boolean isCyclic(){
+        boolean[] recursionStack=new boolean[V];
+        boolean[] visited=new boolean[V];
+
+        for(int i=0;i<V;i++){
+            if(isCyclicUtils(i, recursionStack, visited))
+                return true;
+        }
+        return false;
+    }
+
 }
