@@ -28,14 +28,14 @@ public class nextSuccessor {
 
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args){         // parent nodes not assigned
         Node root=new Node(4);
         root.left=new Node(1);
         root.left.right=new Node(3);
         root.right=new Node(7);
         root.right.left=new Node(6);
         root.right.right= new Node(9);
-        Node n= nextSucc(root.left.right);
+        Node n= nextSucc(root.left);
         System.out.println(n.val);
     }
 
