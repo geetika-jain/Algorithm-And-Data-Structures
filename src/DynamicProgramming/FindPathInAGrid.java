@@ -9,8 +9,9 @@ public class FindPathInAGrid {
         ArrayList<Point> path=new ArrayList<>();
         if(matrix==null || matrix.length==0 || matrix[0].length==0) return path;
         Set<Point> failed=new HashSet<>();
-        find(matrix, matrix.length-1, matrix[0].length-1, path, failed);
+        if(find(matrix, matrix.length-1, matrix[0].length-1, path, failed))
         return path;
+        return null;
     }
 
     private static boolean find(boolean[][] matrix, int r, int c, ArrayList<Point> path, Set<Point> failed){
